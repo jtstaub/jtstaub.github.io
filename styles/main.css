@@ -1,0 +1,43 @@
+/*Element things*/
+body {
+	background: #323639;
+	margin-left: 10px;
+	color: #a1bcb4;
+	font-family: verdana, arial, sans-serif;
+	font-weight: bold;
+	display: inline;
+}
+h3 {
+	font-size: 16pt;
+}
+
+ /*Header things*/
+header {
+	text-align: center;
+}
+header h1 {
+	font-size: 30pt;
+}
+
+ /*Main things*/
+main {
+	margin-left: 10px;
+}
+
+/*Other things*/
+.scale {
+	max-width: 100%;
+	max-height: 30vh;
+	height: auto;
+	margin: auto;
+}
+a:link {
+	color: #3990ff;
+}
+a:hover, a:focus {
+	color: #1b80a9;
+}
+#mysterious {
+	font-family: serif;
+	font-size: 16pt;
+}
