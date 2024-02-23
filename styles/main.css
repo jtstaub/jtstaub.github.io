@@ -97,6 +97,9 @@ a:link {
 a:hover, a:focus {
 	color: #1b80a9;
 }
+a:visited {
+	color: #325490;
+}
 #mysterious {
 	font-family: serif;
 	font-size: 16pt;
