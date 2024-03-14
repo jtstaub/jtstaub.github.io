@@ -1,0 +1,164 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Element things*/
+html {
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: black;
+}
+body {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #323639;
+	color: #a1bcb4;
+	font-family: verdana, arial, sans-serif;
+}
+h3 {
+	font-size: 16pt;
+}
+
+/*Header things*/
+header {
+	position: relative;
+}
+header h1 {
+	font-size: 30pt;
+	color: #dfd9d1;
+	padding-bottom: 19px;
+	text-align: center;
+}
+
+/*Nav things*/
+nav{
+	width: 640px;
+	margin: auto;
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+nav ul li {
+	float: left;
+	width: 160px;
+}
+nav ul li a {
+	display: block;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background: #202224;
+	text-decoration: none;
+	color: #dfd9d1;
+	font-weight: bold;
+}
+nav > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+nav ul li a.current, a:hover, a:focus{
+	color: #5dbee5;
+}
+/*Main things*/
+main {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 7px;
+	padding: 19px;
+	margin-top: 19px;
+}
+main h1 {
+	font-size: 1.5em;
+	color: #dfd9d1;
+}
+main h2 {
+	color: #dfd9d1;
+	padding-top: 19px;
+}
+main h3 {
+	color: #dfd9d1;
+	padding-top: 19px;
+}
+main img {
+	float: left;
+	margin-right: 19px; 
+}
+main p {
+	padding-top: 19px;
+	padding-right: 19px;
+	padding-left: 19px;
+}
+
+/*Table things*/
+table {
+	border-collapse: collapse;
+}
+tbody tr:nth-child(odd), tfoot tr:nth-child(odd) {
+	background: #3f3f3f;
+}
+	
+th, td {
+	border: solid 2px #8b8780;
+	padding: .3em .7em;
+	color: #dfd9d1;
+}
+.head {
+	text-align: left;
+}
+.foot{
+	text-align: left;
+	max-width: 300px;
+}
+figcaption {
+	padding-bottom: .2em;
+	color: #dfd9d1;
+	font-size: 130%;
+	font-weight: bold;
+}
+
+/*Footer things*/
+footer {
+	clear: both;
+	padding: 19px;
+	text-align: center;
+}
+
+/*Other things*/
+.scale {
+	display: block;
+	max-width: 100%;
+	max-height: 20vh;
+	height: auto;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.fixed {
+	width: 80px;
+	position: absolute;
+	top: 19px;
+	left: 19px;
+}	
+main a:link {
+	color: #3990ff;
+}
+main a:hover, a:focus {
+	color: #1b80a9;
+}
+main a:visited{
+	color: #dfd9d1;
+}
+#mysterious {
+	font-family: serif;
+	font-size: 16pt;
+}
