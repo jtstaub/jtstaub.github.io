@@ -1,0 +1,210 @@
+/* Jacob Staub
+   3/19/24
+   CS 125h Term Project */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+
+/*Element things*/
+html {
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: black;
+}
+body {
+	width: 100%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #323639;
+	color: #a1bcb4;
+	font-family: verdana, arial, sans-serif;
+}
+h3 {
+	font-size: 16pt;
+}
+
+/*Header things*/
+header h1 {
+	font-size: 220%;
+	color: #dfd9d1;
+	padding-bottom: 19px;
+	text-align: center;
+}
+
+/*Nav things*/
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+nav ul li {
+	display: inline;
+}
+nav ul li a {
+	display: inline-block;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background: #202224;
+	text-decoration: none;
+	color: #dfd9d1;
+	width: 13.3%;
+}
+nav ul li a.current, a:hover, a:focus {
+	color: #5dbee5 !important;
+}
+
+/*Main things*/
+main {
+	overflow:auto;
+	width: 83.33%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+main h1 {
+	font-size: 150%;
+	color: #dfd9d1;
+	margin-bottom: 10px;
+}
+main h2 {
+	color: #dfd9d1;
+	padding-top: 19px;
+}
+main h3 {
+	color: #dfd9d1;
+	padding-top: 19px;
+}
+main p {
+	padding-top: 19px;
+	padding-right: 19px;
+	padding-left: 19px;
+}
+
+/*Form things*/
+section {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+fieldset {
+	width: 83.33%;
+	border: none;
+	display: inline;
+}
+input {
+
+    width: 33.3%;
+	border-radius: 12px;
+	margin: 7px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: none;
+	font-size: 87.5%;
+	font-family: verdana, arial, sans-serif;
+}
+br {
+    clear: both;
+}
+input:required {
+	border: 3px solid #74322d;
+	box-sizing: border-box;
+}
+input:valid {
+	border: 3px solid #dfd9d1;
+	box-sizing: border-box;
+}
+input:invalid {
+	box-shadow: none;
+}
+input.button {
+	display: block;
+	width: 10em;
+	margin: 0 auto;
+	border: none;
+	margin-top: 30px;
+	background: #dfd9d1; 
+	color: #202224;
+}
+/*Other things*/
+.scale {
+	display: block;
+	width: 30%;
+	min-width: 250px;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	margin-right: auto;
+	margin-left: auto;
+}	
+main a:link {
+	color: #3990ff;
+}
+main a:hover, a:focus {
+	color: #1b80a9;
+}
+main a:visited{
+	color: #dfd9d1;
+}
+
+#mobile_menu { display: none; }
+
+@media only screen and (max-width: 817px) {
+	input {
+		display: block;
+		margin: 15px auto;
+		width: 68.6%;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+		max-width: 436px;
+		margin: 0 auto;
+	}
+	.slicknav_menu {
+		background: #202224 !important;
+	}
+	.slicknav_menutxt, .slicknav_icon, .slicknav_nav a {
+		color: #dfd9d1 !important;
+	}
+	.slicknav_nav a:hover {
+		background: #202224 !important;
+	}
+	.slicknav_icon-bar {
+		background-color: #dfd9d1 !important;
+	}
+}
+
+@media only screen and (max-width: 603px) {
+	main h1 {
+		font-size: 130%;
+	}
+	main p {
+		font-size: 90%;
+	}
+	header h1 {
+		font-size: 160%;
+	}
+	#mobile_menu {
+		max-width: 350px;
+	}
+	#form input {
+		min-width: 290px;
+	}
+}
+
+@media only screen and (max-width: 348px) {
+	body {
+		font-size: 90%;
+	}
+	#form input {
+		min-width: 220px;
+	}
+}
