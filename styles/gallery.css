@@ -25,6 +25,7 @@ main img {
 	.gridContainer {
 		grid-template-columns: auto auto;
 	}
+}
 
 @media only screen and (max-width: 603px) {
 	main img {
@@ -41,4 +42,4 @@ main img {
 	.gridContainer {
 		grid-template-columns: auto;
 	}
-} 
+}
