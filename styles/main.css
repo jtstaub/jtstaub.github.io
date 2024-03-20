@@ -1,0 +1,142 @@
+/* Jacob Staub
+   3/19/24
+   CS 125h Term Project */
+
+* {
+	--offwhite: #dfd9d1;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold; 
+}
+
+/*Element things*/
+html {
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: black;
+}
+body {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	background: #323639;
+	color: var(--offwhite);
+	font-family: verdana, arial, sans-serif;
+}
+h1 {
+	font-size: 150%;
+}
+p {
+	color: #aac2c3;
+}
+h3 {
+	font-size: 100%;
+}
+
+/*Header things*/
+header {
+	position: relative;
+}
+header h1 {
+	font-size: 220%;
+	color: var(--offwhite);
+	padding-bottom: 1em;
+	text-align: center;
+}
+header img {
+	display: block;
+	width: 36%;
+	min-width: 250px;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 1em 0;
+}
+
+/*Nav things*/
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+nav ul li {
+	display: inline;
+}
+nav ul li a {
+	display: inline-block;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background: #202224;
+	text-decoration: none;
+	color: var(--offwhite);
+	width: 16%;
+	max-width: 150px;
+}
+nav ul li a.current, a:hover, a:focus {
+	color: #5dbee5 !important;
+}
+
+/*Main things*/
+main {
+	overflow: auto;
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	margin-top: 1em;	
+}
+main a:link {
+	color: #3990ff;
+}
+main a:hover, a:focus {
+	color: #1b80a9;
+}
+main a:visited{
+	color: var(--offwhite);
+}
+
+/*Other things*/
+#mobile_menu { display: none; }
+
+@media only screen and (max-width: 817px) {
+	nav ul li a {
+		font-size: 90%;
+	}
+	.slicknav_menu {
+		background: #202224 !important;
+	}
+	.slicknav_menutxt, .slicknav_icon, .slicknav_nav a {
+		color: var(--offwhite) !important;
+	}
+	.slicknav_nav a:hover {
+		background: #202224 !important;
+	}
+	.slicknav_icon-bar {
+		background-color: var(--offwhite) !important;
+	}
+}
+
+@media only screen and (max-width: 603px) {
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+		max-width: 350px;
+		margin: 0 auto;
+	}
+	main h1 {
+		font-size: 130%;
+	}
+	header h1 {
+		font-size: 160%;
+	}
+}
+
+@media only screen and (max-width: 335px) {
+	body {
+		font-size: 90%;
+	}
+}
