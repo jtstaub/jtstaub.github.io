@@ -1,0 +1,60 @@
+<!--Jacob Staub
+	3/19/24
+	CS 125 Term Project-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Niko</title>
+	<link rel="shortcut icon" href="images/icon.jpg">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/newsletter.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="styles/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<img src="images/Niko.jpg" alt="Niko looking at the camera" class="scale"> 
+		<h1> Niko Appreciation Page </h1>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html" title="Home">Home</a></li
+			><li><a href="about.html" title="About">About</a></li
+			><li><a href="gallery.html" title="Gallery">Gallery</a></li
+			><li><a href="newsletter.html" title="Newsletter" class="current">Newsletter</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h1>Join the mailing list!</h1>
+			<p>Sign up to recieve updates on everything Niko</p><br>
+    		<form method="get"
+        		name="get_in_touch" id="get_in_touch">
+    			<fieldset>
+					<div id="form">
+						<input type="text" name="first_name" id="first_name" placeholder="First name*" required
+						><input type="text" name="last_name" id="last_name" placeholder="Last name*" required
+						><input type="email" name="email" id="email" placeholder="Email address*" required
+						><input type="tel" name="phone" id="phone" placeholder="Phone Number" 
+							   pattern="(\d{3}[\-]\d{3}[\-]\d{4}) | (\d{10}) | ([\(]\d{3}[\)][\-]\d{3}[\-]\d{4}) | ([\(]\d{3}[\)][ ]\d{3}[\-]\d{4})" title="(999) 999-9999 or 999-999-9999" class="inline">
+					</div>
+					<input type="submit" id="submit" value="Sign Up" class="button"><br>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
+
