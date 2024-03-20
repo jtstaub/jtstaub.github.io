@@ -1,6 +1,11 @@
+/* Jacob Staub
+   3/19/24
+   CS 125h Term Project */
+
 * {
 	margin: 0px;
 	padding: 0px;
+	font-weight: bold;
 }
 
 /*Element things*/
@@ -12,7 +17,8 @@ html {
 	background-color: black;
 }
 body {
-	width: 1200px;
+	width: 100%;
+	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
 	background: #323639;
@@ -28,56 +34,48 @@ header {
 	position: relative;
 }
 header h1 {
-	font-size: 30pt;
+	font-size: 220%;
 	color: #dfd9d1;
 	padding-bottom: 19px;
 	text-align: center;
 }
 
 /*Nav things*/
-nav{
-	width: 640px;
-	margin: auto;
-}
 nav ul {
 	list-style-type: none;
+	text-align: center;
 	padding: 0;
 	margin: 0;
-	position: relative;
 }
 nav ul li {
-	float: left;
-	width: 160px;
+	display: inline;
 }
 nav ul li a {
-	display: block;
+	display: inline-block;
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	background: #202224;
 	text-decoration: none;
 	color: #dfd9d1;
-	font-weight: bold;
+	width: 13.3%;
 }
-nav > ul::after {
-	content: "";
-	display: block;
-	clear: both;
+nav ul li a.current, a:hover, a:focus {
+	color: #5dbee5 !important;
 }
-nav ul li a.current, a:hover, a:focus{
-	color: #5dbee5;
-}
+
 /*Main things*/
 main {
-	width: 1000px;
-	margin-right: auto;
-	margin-left: auto;
-	border-radius: 7px;
-	padding: 19px;
-	margin-top: 19px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	overflow: auto;
+	width: 83.33%;
+	margin: 0 auto;
+	padding: 30px 0;
 }
 main h1 {
-	font-size: 1.5em;
+	font-size: 150%;
 	color: #dfd9d1;
 }
 main h2 {
@@ -89,8 +87,10 @@ main h3 {
 	padding-top: 19px;
 }
 main img {
-	float: left;
-	margin-right: 19px; 
+	margin-right: 19px;
+	width: 29%;
+	min-width: 220px;
+	align-self: center;
 }
 main p {
 	padding-top: 19px;
@@ -108,7 +108,7 @@ tbody tr:nth-child(odd), tfoot tr:nth-child(odd) {
 	
 th, td {
 	border: solid 2px #8b8780;
-	padding: .3em .7em;
+	padding: .3em 1.6em .3em .7em;
 	color: #dfd9d1;
 }
 .head {
@@ -122,7 +122,6 @@ figcaption {
 	padding-bottom: .2em;
 	color: #dfd9d1;
 	font-size: 130%;
-	font-weight: bold;
 }
 
 /*Footer things*/
@@ -135,20 +134,14 @@ footer {
 /*Other things*/
 .scale {
 	display: block;
-	max-width: 100%;
-	max-height: 20vh;
-	height: auto;
+	width: 30%;
+	min-width: 250px;
 	padding-top: 19px;
 	padding-bottom: 19px;
 	margin-right: auto;
 	margin-left: auto;
 }
-.fixed {
-	width: 80px;
-	position: absolute;
-	top: 19px;
-	left: 19px;
-}	
+	
 main a:link {
 	color: #3990ff;
 }
@@ -161,4 +154,66 @@ main a:visited{
 #mysterious {
 	font-family: serif;
 	font-size: 16pt;
+}
+
+#mobile_menu { display: none; }
+
+@media only screen and (max-width: 817px) {
+	main {
+		display: inline;
+	}
+	main img {
+		display: block;
+		float: none;
+		margin: 19px auto;
+		max-width: 220px;
+	}
+	table {
+		margin: 0 auto;
+	}
+	figcaption {
+		margin-top: 19px;
+		text-align: center;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+		max-width: 436px;
+		margin: 0 auto;
+	}
+	.slicknav_menu {
+		background: #202224 !important;
+	}
+	.slicknav_menutxt, .slicknav_icon, .slicknav_nav a {
+		color: #dfd9d1 !important;
+	}
+	.slicknav_nav a:hover {
+		background: #202224 !important;
+	}
+	.slicknav_icon-bar {
+		background-color: #dfd9d1 !important;
+	}
+}
+
+@media only screen and (max-width: 603px) {
+	main h1 {
+		font-size: 130%;
+	}
+	header h1 {
+		font-size: 160%;
+	}
+	main p {
+		columns: 1;
+	}
+	#mobile_menu {
+		max-width: 350px;
+	}
+}
+
+@media only screen and (max-width: 335px) {
+	body {
+		font-size: 90%;
+	}
 }
