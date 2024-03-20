@@ -24,10 +24,26 @@ body {
 	background: #323639;
 	color: #a1bcb4;
 	font-family: verdana, arial, sans-serif;
-
+}
+h1 {
+	font-size: 150%;
+	color: #dfd9d1;
+}
+h2 {
+	color: #dfd9d1;
 }
 h3 {
-	font-size: 16pt;
+	font-size: 100%;
+	color: #dfd9d1;
+}
+a:link {
+	color: #3990ff;
+}
+a:hover, a:focus {
+	color: #1b80a9;
+}
+a:visited{
+	color: #dfd9d1;
 }
 
 /*Header things*/
@@ -37,7 +53,7 @@ header {
 header h1 {
 	font-size: 220%;
 	color: #dfd9d1;
-	padding-bottom: 19px;
+	padding-bottom: 1em;
 	text-align: center;
 }
 
@@ -67,46 +83,11 @@ nav ul li a.current, a:hover, a:focus {
 
 /*Main things*/
 main {
-	overflow:auto;
+	overflow: auto;
 	width: 83.33%;
 	margin: 0 auto;
-	border: 3px solid #dfd9d1;
-	border-radius: 7px;
-	padding: 19px;
-	margin-top: 19px;
-	
-}
-main h1 {
-	font-size: 150%;
-	color: #dfd9d1;
-}
-main h2 {
-	color: #dfd9d1;
-	padding-top: 19px;
-}
-main h3 {
-	color: #dfd9d1;
-	padding-top: 19px;
-}
-main img {
-	float: left;
-	margin-right: 19px; 
-	width: 26.3%;
-	min-width: 200px;
-}
-main p {
-	columns: 2;
-}
-
-/*Footer things*/
-footer {
-	clear: both;
-	padding: 19px;
-	text-align: center;
-}
-footer img {
-	width: 13%;
-	min-width: 100px;
+	padding: 1em;
+	margin-top: 1em;	
 }
 
 /*Other things*/
@@ -114,8 +95,8 @@ footer img {
 	display: block;
 	width: 30%;
 	min-width: 250px;
-	padding-top: 19px;
-	padding-bottom: 19px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -151,22 +132,10 @@ footer img {
 	header h1 {
 		font-size: 160%;
 	}
-	main p {
-		columns: 1;
-	}
 	#mobile_menu {
 		max-width: 350px;
 	}
-	main img {
-		display: block;
-		float: none;
-		margin: 0 auto;
-	}
-	main h1 {
-		text-align: center;
-	}
 }
-
 
 @media only screen and (max-width: 335px) {
 	body {
