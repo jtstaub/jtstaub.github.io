@@ -36,15 +36,6 @@ h3 {
 	font-size: 100%;
 	color: #dfd9d1;
 }
-a:link {
-	color: #3990ff;
-}
-a:hover, a:focus {
-	color: #1b80a9;
-}
-a:visited{
-	color: #dfd9d1;
-}
 
 /*Header things*/
 header {
@@ -88,6 +79,15 @@ main {
 	margin: 0 auto;
 	padding: 1em;
 	margin-top: 1em;	
+}
+main a:link {
+	color: #3990ff;
+}
+main a:hover, a:focus {
+	color: #1b80a9;
+}
+main a:visited{
+	color: #dfd9d1;
 }
 
 /*Other things*/
